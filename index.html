@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAgeCalc - Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="MyAgeCalc Logo">
+            <h1>MyAgeCalc</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Left side: Larger animated video -->
+            <div class="animated-video">
+                <video id="age-video" width="100%" autoplay loop muted>
+                    <source src="videos/child-animation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Right side: Calculator -->
+            <div class="calculator-box">
+                <h2>Calculate Your Age</h2>
+                <div class="input-container">
+                    <label for="dob">Enter Date of Birth</label>
+                    <input type="date" id="dob">
+
+                    <label for="compare-date">Enter Compare Date (optional)</label>
+                    <input type="date" id="compare-date">
+
+                    <button id="calculate-btn">Calculate Age</button>
+                </div>
+
+                <!-- Results Section -->
+                <div class="results-container">
+                    <p id="age-result"></p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Zodiac Section -->
+        <section class="zodiac-section">
+            <h2>Find Your Zodiac</h2>
+            <p id="zodiac-result"></p>
+            
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
